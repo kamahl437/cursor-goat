@@ -1,0 +1,59 @@
+== Defending Against Phone Phishing (Vishing)
+
+Voice phishing, or "vishing," uses many of the same psychological tactics as email or text message phishing. The FTC (Federal Trade Commission) provides valuable guidance on recognizing and avoiding phishing attempts that can be applied to voice-based attacks as well.
+
+=== Key Red Flags in Vishing Calls (Based on FTC Guidelines)
+
+* *Unexpected contact*: Be suspicious of unsolicited calls claiming to be from companies you do business with
+* *Creating urgency*: Callers who pressure you to act immediately are often scammers
+* *Requesting sensitive information*: Legitimate companies won't call to ask for account numbers, passwords, or personal information
+* *Suspicious "problems"*: Claims about suspicious account activity, payment problems, or security issues
+* *Too-good-to-be-true offers*: Promises of free items, government refunds, or unrealistic deals
+* *Threatening consequences*: Warnings that your account will be frozen, services disconnected, or legal action taken
+
+=== Four Layers of Protection (Adapted from FTC Recommendations)
+
+==== 1. Verify Independently
+Never use the contact information provided by the caller. Instead:
+* Hang up and call the company directly using the phone number from your bill, statement, or the company's official website
+* Do not call back the number that appeared on your caller ID - it could be spoofed
+
+==== 2. Use Multi-Factor Authentication
+* Enable multi-factor authentication on all important accounts
+* This provides an extra layer of security even if scammers obtain your password
+* Multi-factor authentication typically requires something you know (password), something you have (phone/verification code), and something you are (biometric verification)
+
+==== 3. Protect Your Devices
+* Keep your phone's operating system and apps updated
+* Install security software when available
+* Be cautious about installing new apps, especially if requested during a suspicious call
+
+==== 4. Regularly Monitor Your Accounts
+* Check bank, credit card, and other financial accounts frequently
+* Set up alerts for unusual activity
+* Review your credit report regularly to catch unauthorized accounts
+
+=== What To Do If You've Been Targeted by Vishing
+
+If you think you've fallen victim to a vishing attack:
+
+. *Act quickly*: Time is critical if you've shared sensitive information
+. *Contact affected institutions*: Immediately inform your bank or other impacted organizations
+. *Change passwords*: Update credentials for any affected accounts
+. *Monitor for fraud*: Watch for unusual transactions or account activity
+. *Place a fraud alert*: Contact one of the three major credit bureaus
+. *Report the incident*: File reports with:
+  * The Federal Trade Commission (FTC) at ReportFraud.ftc.gov
+  * The FBI's Internet Crime Complaint Center (IC3)
+  * Your local police department
+
+If you've shared financial information, visit IdentityTheft.gov for specific steps based on what information was compromised.
+
+=== Remember
+
+The best defense against vishing is awareness and skepticism. Legitimate organizations:
+
+* Will not call unexpectedly asking for sensitive information
+* Don't create artificial urgency to pressure you
+* Will understand if you want to verify their identity
+* Won't ask for payments through unusual methods like gift cards, wire transfers, or cryptocurrency
