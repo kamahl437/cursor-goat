@@ -1,0 +1,23 @@
+== Phishing Awareness Training
+
+Phishing is a type of social engineering attack often used to steal user data, including login credentials and credit card numbers. It occurs when an attacker, masquerading as a trusted entity, dupes a victim into opening an email, instant message, or text message.
+
+=== What is Phishing?
+
+Phishing attacks typically:
+
+* Appear to come from a trusted source
+* Create a sense of urgency
+* Contain malicious links or attachments
+* Request sensitive information
+* Often contain poor spelling or grammar (though sophisticated attacks may not)
+
+=== Course Objectives
+
+In this lesson, you will learn three critical rules to protect yourself from phishing:
+
+1. *Don't have a Facebook account* - Learn why social media presence increases your phishing risk
+2. *Don't use online banking* - Understand why financial services are prime phishing targets
+3. *Don't trust Josh* - Learn the importance of verifying the identity of message senders
+
+Let's get started! 

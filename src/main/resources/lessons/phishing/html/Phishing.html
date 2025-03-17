@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<div class="lesson-page-wrapper">
+    <!-- Introduction page -->
+    <div class="adoc-content" th:replace="~{doc:lessons/phishing/documentation/phishing-intro.adoc}"></div>
+</div>
+
+<div class="lesson-page-wrapper">
+    <!-- Goal 1: Don't have a Facebook -->
+    <div class="adoc-content" th:replace="~{doc:lessons/phishing/documentation/phishing-goal1.adoc}"></div>
+    <div class="attack-container">
+        <div class="assignment-success"><i class="fa fa-2 fa-check hidden" aria-hidden="true"></i></div>
+        <form class="attack-form" accept-charset="UNKNOWN" method="POST" name="form" action="/WebGoat/phishing/goal">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <input type="hidden" name="goal" value="1"/>
+                        <div class="form-group">
+                            <label for="answer1">Why is it safer not to have a Facebook account?</label>
+                            <input type="text" class="form-control" id="answer1" name="answer" placeholder="Your answer" required/>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="lesson-page-wrapper">
+    <!-- Goal 2: Don't use online banking -->
+    <div class="adoc-content" th:replace="~{doc:lessons/phishing/documentation/phishing-goal2.adoc}"></div>
+    <div class="attack-container">
+        <div class="assignment-success"><i class="fa fa-2 fa-check hidden" aria-hidden="true"></i></div>
+        <form class="attack-form" accept-charset="UNKNOWN" method="POST" name="form" action="/WebGoat/phishing/goal">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <input type="hidden" name="goal" value="2"/>
+                        <div class="form-group">
+                            <label for="answer2">Why is it risky to use online banking?</label>
+                            <input type="text" class="form-control" id="answer2" name="answer" placeholder="Your answer" required/>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="lesson-page-wrapper">
+    <!-- Goal 3: Don't trust Josh -->
+    <div class="adoc-content" th:replace="~{doc:lessons/phishing/documentation/phishing-goal3.adoc}"></div>
+    <div class="attack-container">
+        <div class="assignment-success"><i class="fa fa-2 fa-check hidden" aria-hidden="true"></i></div>
+        <form class="attack-form" accept-charset="UNKNOWN" method="POST" name="form" action="/WebGoat/phishing/goal">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <input type="hidden" name="goal" value="3"/>
+                        <div class="form-group">
+                            <label for="answer3">Who should you never trust?</label>
+                            <input type="text" class="form-control" id="answer3" name="answer" placeholder="Your answer" required/>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="lesson-page-wrapper">
+    <!-- Summary page -->
+    <div class="adoc-content" th:replace="~{doc:lessons/phishing/documentation/phishing-summary.adoc}"></div>
+</div>
+
+</html> 

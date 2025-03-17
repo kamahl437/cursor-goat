@@ -1,0 +1,52 @@
+== Goal 2: Don't Use Online Banking
+
+=== Why Banking is a Prime Target
+
+Financial institutions are the most targeted sector for phishing attacks, and for good reason:
+
+* *High Value Target*: Access to your bank account provides immediate financial gain for attackers.
+
+* *Brand Trust*: People tend to trust emails that appear to come from their bank, making these phishing attempts more successful.
+
+* *Urgency*: Banking-related messages often create a sense of urgency ("suspicious activity detected," "account suspended"), pressuring users to act quickly without thinking.
+
+=== Common Banking Phishing Techniques
+
+1. *Fake Bank Emails*: Emails claiming to be from your bank, informing you of "suspicious activity" or "account verification required."
+
+2. *Clone Websites*: Sophisticated replicas of banking websites that harvest your login credentials.
+
+3. *SMS Phishing*: Text messages claiming to be from your bank with links to malicious websites.
+
+4. *Vishing (Voice Phishing)*: Phone calls from individuals claiming to be bank representatives, asking for your account details.
+
+=== Example of a Banking Phishing Email
+
+----
+From: security@yourb4nk.com
+Subject: URGENT: Suspicious Login Attempt Detected
+
+Dear valued customer,
+
+We have detected a suspicious login attempt to your account from an unrecognized device.
+
+To secure your account, please verify your identity immediately by clicking here: [Link to fake website]
+
+If you do not verify within 24 hours, your account will be temporarily suspended.
+
+Regards,
+Security Team
+YourBank
+----
+
+=== Safer Alternatives
+
+If you must use banking services:
+
+* Visit your bank in person when possible
+* Use the official bank app instead of the website
+* Call the official number on your bank card if you receive suspicious communications
+* Never click links in emails claiming to be from your bank
+* Use a dedicated, secure device for banking transactions
+
+*Now, answer the question below to demonstrate your understanding of why online banking poses phishing risks.* 

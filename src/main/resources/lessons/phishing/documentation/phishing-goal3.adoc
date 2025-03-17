@@ -1,0 +1,67 @@
+== Goal 3: Don't Trust Josh
+
+=== Verifying Sender Identity
+
+One of the most critical aspects of phishing prevention is verifying the identity of message senders. In this lesson, we'll use "Josh" as our example of someone you should never trust without verification.
+
+=== The Josh Problem
+
+Josh is that friendly colleague who often sends you links, files, and requests for information. But how do you know if it's really Josh?
+
+* *Email Spoofing*: Attackers can easily forge email headers to make messages appear to come from "josh@company.com"
+* *Account Takeover*: Josh's actual account might be compromised
+* *Similar Domains*: "j0sh@company.com" or "josh@cornpany.com" can look legitimate at a glance
+* *Personal Information*: If an attacker knows Josh is your colleague, they can craft convincing messages
+
+=== Real Examples of "Josh" Attacks
+
+==== The Helpful IT Josh
+
+----
+From: josh.support@company-it-dept.com
+Subject: New Security Update Required
+
+Hi there,
+
+This is Josh from IT. We're rolling out a new security update that requires your immediate attention. 
+Please download and install this file: [malware.exe]
+
+Let me know if you have any issues.
+
+Thanks,
+Josh
+----
+
+==== The Finance Department Josh
+
+----
+From: josh.finance@company.com
+Subject: Urgent: Updated Banking Details
+
+Hey team,
+
+I've updated our payment details for the Johnson project. Please use the new account information for all future transfers:
+
+Bank: First National Trust
+Account: 7729853101
+Routing: 211370545
+
+Please confirm receipt of this email.
+
+Josh
+Finance Department
+----
+
+=== How to Verify Identity
+
+To protect yourself from "Josh" and others:
+
+* Verify requests through a different communication channel (call Josh if you get a suspicious email)
+* Check email headers for inconsistencies
+* Hover over links before clicking to see the true destination
+* Be skeptical of unexpected requests, especially those involving money or credentials
+* Use email signing and encryption where possible
+
+Remember: *Trust, but verify* - especially when it comes to Josh!
+
+*Now, answer the question below to demonstrate your understanding of who you should never trust.* 

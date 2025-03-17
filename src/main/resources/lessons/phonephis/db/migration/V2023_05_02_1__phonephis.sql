@@ -1,0 +1,2 @@
+-- This is a placeholder for future phone phishing lesson database migrations
+-- No database tables are needed for the current version of this lesson 

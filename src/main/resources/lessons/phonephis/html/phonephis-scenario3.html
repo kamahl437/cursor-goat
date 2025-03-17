@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Phone Phishing - Survey Call Scenario</title>
+    <div th:replace="~{head}"></div>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Survey Call Scenario</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h4>Scenario Description:</h4>
+                                <p>You receive a call from someone claiming to be conducting a consumer survey about online shopping habits. They explain that your responses will help improve online shopping experiences and that you can receive a reward for participating.</p>
+                                
+                                <p>The caller says:</p>
+                                <blockquote class="blockquote" style="border-left: 5px solid #eee; padding-left: 10px;">
+                                    <p>"Hello, I'm Sarah from Consumer Research Group. We're conducting an important survey about online shopping habits, and we've selected you to participate. The survey will take just 5 minutes, and as a thank you, you'll receive a $50 gift card to your choice of major retailers."</p>
+                                    <p>"First, I'll need to verify some information to make sure you qualify and so we can send your gift card. Could you please confirm your full name, date of birth, and home address? Also, to understand your shopping habits better, which online stores do you shop at most frequently, and what payment methods do you typically use? For the gift card, would you prefer Amazon or Walmart? We can send it immediately after this call, but we'll need your email address and a credit card or bank account to verify your identity before sending the reward."</p>
+                                </blockquote>
+                                
+                                <h4>Assignment:</h4>
+                                <p>What are the red flags in this scenario? Identify at least one suspicious element in the caller's request that indicates this might be a voice phishing attack.</p>
+                                
+                                <form class="attack-form" accept-charset="UNKNOWN" method="POST" 
+                                    th:action="@{/phonephis/scenario3}" 
+                                    id="phonephis-scenario3-form">
+                                    <div class="form-group">
+                                        <label for="answer">Your Answer:</label>
+                                        <textarea class="form-control" id="answer" name="answer" rows="4" required></textarea>
+                                    </div>
+                                    <input type="submit" class="btn btn-primary" value="Submit"/>
+                                </form>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="alert alert-info">
+                                    <strong>Tip:</strong> Think about what information is excessive for a legitimate survey and why they might need payment information.
+                                </div>
+                                <img th:src="@{/images/survey-call.png}" class="img-responsive" alt="Survey Call" style="max-width: 100%; margin-top: 20px;"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

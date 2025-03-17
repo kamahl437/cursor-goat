@@ -1,0 +1,43 @@
+== Scenario 1: The IT Support Call
+
+One of the most common vishing attacks targets businesses and individuals by impersonating IT support or help desk personnel.
+
+=== The Scenario
+
+_Your phone rings. The caller ID shows your company's name._
+
+"Hello, this is Josh from IT Support. We've detected some unusual activity on your computer that suggests it might be infected with malware. I need to help you secure your system immediately before any sensitive data is compromised. I'll need your username and password to run some diagnostics, and I'll need you to install a remote support tool so I can clean your system."
+
+=== Red Flags in This Scenario
+
+* *Unsolicited call*: You didn't request IT support
+* *Request for credentials*: Legitimate IT staff should never ask for your password
+* *Urgency*: Creating a sense of immediate danger
+* *Request to install software*: Could be malware or remote access tools
+* *Name-dropping*: Using common names like "Josh" to seem familiar
+
+=== Actual Attack Objective
+
+The attacker is trying to:
+
+1. Obtain your login credentials
+2. Install remote access software to control your computer
+3. Potentially deploy ransomware or data-stealing malware
+4. Access sensitive corporate or personal information
+
+=== Real-World Statistics
+
+* 69% of organizations reported being targeted by voice phishing in 2022
+* The average cost of a successful vishing attack on a business is $136,000
+* IT support impersonation vishing attacks increased 47% during the COVID-19 pandemic when remote work became more common
+
+=== How to Respond
+
+Legitimate options for handling this situation include:
+
+* Hang up immediately
+* Tell the caller you will call back through the official IT help desk number
+* Refuse to provide any credentials over the phone
+* Verify the request through official channels before taking any action
+
+*Now, select the most appropriate response to this scenario below.* 

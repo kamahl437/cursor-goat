@@ -1,0 +1,48 @@
+== Phone Phishing (Vishing)
+
+Phone phishing, also known as voice phishing or "vishing," is a social engineering attack where criminals use phone calls to deceive victims into revealing sensitive information or taking harmful actions.
+
+=== What is Voice Phishing?
+
+Voice phishing is a form of social engineering that uses the telephone system to manipulate people into divulging sensitive information or performing actions that compromise security. Unlike traditional phishing that relies on email or fake websites, vishing exploits the personal nature of voice communication and our tendency to trust phone conversations.
+
+=== Common Voice Phishing Scenarios
+
+==== IT Support Calls
+Attackers pose as IT helpdesk staff, claiming there's an urgent security issue with your computer or account. They typically request:
+* Your login credentials
+* Remote access to your computer
+* Installation of "security software" (actually malware)
+
+==== Bank Security Calls
+Criminals claim to be from your bank's security department, alerting you to "suspicious transactions." They often ask for:
+* Full card numbers and security codes
+* Online banking passwords
+* Personal information to "verify your identity"
+
+==== Survey Calls
+These seemingly innocent calls request participation in a survey, often with a reward. Red flags include requests for:
+* Excessive personal information
+* Financial details "to process your reward"
+* Payment information for "verification purposes"
+
+=== Why Voice Phishing Works
+
+Voice phishing is particularly effective because:
+
+* *Human touch*: Voice calls feel more personal and trustworthy than emails
+* *Urgency*: Attackers create time pressure to force quick decisions
+* *Authority*: Impersonating authority figures intimidates victims into compliance
+* *Limited verification*: It's difficult to verify caller identity in real-time
+* *Social engineering*: Attackers exploit psychological triggers like fear, urgency, or greed
+
+=== Lesson Objectives
+
+In this lesson, you will:
+
+1. Learn to identify common voice phishing scenarios
+2. Recognize the psychological tactics used in vishing attacks
+3. Understand the red flags that indicate a potential vishing attempt
+4. Practice appropriate responses to suspected vishing calls
+
+Let's get started by examining some common vishing scenarios and identifying their telltale warning signs. 

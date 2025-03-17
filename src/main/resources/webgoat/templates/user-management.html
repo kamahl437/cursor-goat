@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta http-equiv="Expires" CONTENT="-1"/>
+    <meta http-equiv="Pragma" CONTENT="no-cache"/>
+    <meta http-equiv="Cache-Control" CONTENT="no-cache"/>
+    <meta http-equiv="Cache-Control" CONTENT="no-store"/>
+
+    <!--  CSS -->
+    <link rel="shortcut icon" th:href="@{/css/img/favicon.ico}" type="image/x-icon"/>
+
+    <link rel="stylesheet" type="text/css" th:href="@{/css/main.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/plugins/bootstrap/css/bootstrap.min.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/font-awesome.min.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/animate.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/coderay.css}"/>
+    <!--  end of CSS -->
+
+    <!-- Require.js used to load js asynchronously -->
+    <script src="js/libs/require.min.js" data-main="js/main"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>WebGoat - User Management</title>
+</head>
+<body>
+
+<section id="container">
+    <header id="header">
+        <!--logo start-->
+        <div class="brand">
+            <a th:href="@{/welcome.mvc}" class="logo"><span>Web</span>Goat</a>
+        </div>
+        <!--logo end-->
+        <div id="lesson-title-wrapper">
+            <h2>User Management</h2>
+        </div><!--lesson title end-->
+        <div style="position: absolute;width:600px; z-index:3; top:22px; right: -90px;">
+            <!-- back to admin button -->
+            <a th:href="@{/start.mvc?admin=true}" id="back-button" class="btn btn-default right_nav_button">
+                <i class="fa fa-chevron-left"></i> Back to Admin
+            </a>
+        </div>
+    </header>
+
+    <!--main content start-->
+    <section class="main-content-wrapper">
+        <section id="main-content">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">User Management</h3>
+                        </div>
+                        <div class="panel-body">
+                            <!-- Flash messages -->
+                            <div th:if="${success}" class="alert alert-success" th:text="${success}">Success message</div>
+                            <div th:if="${error}" class="alert alert-danger" th:text="${error}">Error message</div>
+                            <div th:if="${warning}" class="alert alert-warning" th:text="${warning}">Warning message</div>
+                            
+                            <div class="alert alert-info" th:text="${message}">Welcome message</div>
+                            
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="panel panel-primary">
+                                        <div class="panel-heading">
+                                            <h3 class="panel-title">Users</h3>
+                                            <div class="panel-subtitle">
+                                                <small>Users are stored in the CONTAINER.web_goat_user table</small>
+                                            </div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <table class="table table-striped table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Username</th>
+                                                        <th>Role</th>
+                                                        <th>Status</th>
+                                                        <th>Actions</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr th:each="user : ${users}">
+                                                        <td th:text="${user[0]}">username</td>
+                                                        <td>
+                                                            <span th:if="${user[1] == 'WEBGOAT_ADMIN'}" class="label label-danger" th:text="${user[1]}">role</span>
+                                                            <span th:if="${user[1] == 'WEBGOAT_USER'}" class="label label-primary" th:text="${user[1]}">role</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="label label-success" th:text="${user[2]}">status</span>
+                                                        </td>
+                                                        <td>
+                                                            <a th:href="@{/user-management/edit(username=${user[0]})}" class="btn btn-xs btn-primary">
+                                                                <i class="fa fa-edit"></i> Edit
+                                                            </a>
+                                                            <a th:href="@{/user-management/delete(username=${user[0]})}" 
+                                                               class="btn btn-xs btn-danger"
+                                                               onclick="return confirm('Are you sure you want to delete this user?');">
+                                                                <i class="fa fa-trash"></i> Delete
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <a th:href="@{/user-management/create}" class="btn btn-success">
+                                                        <i class="fa fa-plus"></i> Add New User
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="panel panel-info">
+                                        <div class="panel-heading">
+                                            <h3 class="panel-title">Database Information</h3>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p>
+                                                WebGoat uses an HSQLDB database with the following schema for user management:
+                                            </p>
+                                            <ul>
+                                                <li><strong>CONTAINER.web_goat_user</strong> - Stores user accounts with username, password, and role</li>
+                                                <li><strong>CONTAINER.user_progress</strong> - Tracks user progress through lessons</li>
+                                                <li><strong>User-specific schemas</strong> - Each user gets their own schema for lesson data</li>
+                                            </ul>
+                                            <p>
+                                                <a href="/docs/user-database-schema.md" target="_blank" class="btn btn-info btn-sm">
+                                                    <i class="fa fa-book"></i> View Database Documentation
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+</section>
+
+</body>
+</html> 

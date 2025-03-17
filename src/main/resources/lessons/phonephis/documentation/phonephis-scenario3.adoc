@@ -1,0 +1,44 @@
+== Scenario 3: The Survey Call
+
+Survey and market research calls might seem harmless, but they can be cleverly disguised information-gathering operations for identity theft or future targeted attacks.
+
+=== The Scenario
+
+_Your phone rings in the middle of the day. The caller ID shows an unknown number._
+
+"Hello, I'm conducting a quick 5-minute survey for Consumer Research Associates about shopping habits and financial services. Your responses will help improve customer experiences, and you'll receive a $50 gift card for your participation. I just need to confirm some basic information first - your full name, date of birth, address, and the name of your primary bank to ensure you qualify for our survey and gift card."
+
+=== Red Flags in This Scenario
+
+* *Unsolicited call*: You didn't sign up for any survey
+* *Too good to be true*: $50 for a 5-minute survey is unusually generous
+* *Request for personal information*: Legitimate surveys rarely need identifying details
+* *Vague company name*: "Consumer Research Associates" is generic and difficult to verify
+* *Requesting financial information*: No survey needs to know which bank you use
+
+=== Actual Attack Objective
+
+The attacker is trying to:
+
+1. Collect personal information for identity theft
+2. Build a profile on you for more targeted future attacks
+3. Determine which bank to impersonate in follow-up phishing attempts
+4. Establish rapport for ongoing social engineering
+
+=== Real-World Statistics
+
+* 65% of identity theft cases begin with giving information to someone posing as a legitimate business
+* Fraudulent survey calls increased 700% during the pandemic
+* The FTC reports that fake survey scams are among the top 10 consumer complaints
+* 74% of consumers can't distinguish between legitimate market research and fraudulent surveys
+
+=== How to Respond
+
+Legitimate options for handling this situation include:
+
+* Decline to participate in unsolicited surveys
+* Never provide personal or financial information to unknown callers
+* Ask for the company's website and tell them you'll participate online after researching them
+* If interested in the survey, provide only non-identifying information (age range, general shopping preferences)
+
+*Now, select the most appropriate response to this scenario below.* 

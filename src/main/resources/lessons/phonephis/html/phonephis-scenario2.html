@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Phone Phishing - Bank Security Call Scenario</title>
+    <div th:replace="~{head}"></div>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Bank Security Call Scenario</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h4>Scenario Description:</h4>
+                                <p>You receive a call from someone claiming to be from your bank's security department. They explain that they've detected suspicious transactions on your account and need to verify your identity.</p>
+                                
+                                <p>The caller says:</p>
+                                <blockquote class="blockquote" style="border-left: 5px solid #eee; padding-left: 10px;">
+                                    <p>"Hello, I'm calling from the security department at SecureBank. We've detected some suspicious transactions on your account in the last hour. Someone attempted to make three purchases totaling $1,258 at online electronics stores. For your protection, we've temporarily frozen your account."</p>
+                                    <p>"To verify your identity and lift the freeze, I'll need you to confirm your full card number, expiration date, and the security code on the back of your card. After that, I'll also need your online banking password so I can check if anyone has accessed your account without authorization. This is urgent - if we don't verify your identity now, your account will remain frozen and any scheduled payments might fail."</p>
+                                </blockquote>
+                                
+                                <h4>Assignment:</h4>
+                                <p>What are the red flags in this scenario? Identify at least one suspicious element in the caller's request that indicates this might be a voice phishing attack.</p>
+                                
+                                <form class="attack-form" accept-charset="UNKNOWN" method="POST" 
+                                    th:action="@{/phonephis/scenario2}" 
+                                    id="phonephis-scenario2-form">
+                                    <div class="form-group">
+                                        <label for="answer">Your Answer:</label>
+                                        <textarea class="form-control" id="answer" name="answer" rows="4" required></textarea>
+                                    </div>
+                                    <input type="submit" class="btn btn-primary" value="Submit"/>
+                                </form>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="alert alert-info">
+                                    <strong>Tip:</strong> Think about what legitimate bank representatives would and wouldn't ask for over the phone.
+                                </div>
+                                <img th:src="@{/images/bank-call.png}" class="img-responsive" alt="Bank Security Call" style="max-width: 100%; margin-top: 20px;"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

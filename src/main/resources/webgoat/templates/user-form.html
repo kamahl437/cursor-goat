@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta http-equiv="Expires" CONTENT="-1"/>
+    <meta http-equiv="Pragma" CONTENT="no-cache"/>
+    <meta http-equiv="Cache-Control" CONTENT="no-cache"/>
+    <meta http-equiv="Cache-Control" CONTENT="no-store"/>
+
+    <!--  CSS -->
+    <link rel="shortcut icon" th:href="@{/css/img/favicon.ico}" type="image/x-icon"/>
+
+    <link rel="stylesheet" type="text/css" th:href="@{/css/main.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/plugins/bootstrap/css/bootstrap.min.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/font-awesome.min.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/animate.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/coderay.css}"/>
+    <!--  end of CSS -->
+
+    <!-- Require.js used to load js asynchronously -->
+    <script src="js/libs/require.min.js" data-main="js/main"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title th:text="${isNew} ? 'WebGoat - Create User' : 'WebGoat - Edit User'">WebGoat - User Form</title>
+</head>
+<body>
+
+<section id="container">
+    <header id="header">
+        <!--logo start-->
+        <div class="brand">
+            <a th:href="@{/welcome.mvc}" class="logo"><span>Web</span>Goat</a>
+        </div>
+        <!--logo end-->
+        <div id="lesson-title-wrapper">
+            <h2 th:text="${isNew} ? 'Create User' : 'Edit User'">User Form</h2>
+        </div><!--lesson title end-->
+        <div style="position: absolute;width:600px; z-index:3; top:22px; right: -90px;">
+            <!-- back to user management button -->
+            <a th:href="@{/user-management}" id="back-button" class="btn btn-default right_nav_button">
+                <i class="fa fa-chevron-left"></i> Back to User Management
+            </a>
+        </div>
+    </header>
+
+    <!--main content start-->
+    <section class="main-content-wrapper">
+        <section id="main-content">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title" th:text="${isNew} ? 'Create New User' : 'Edit User'">User Form</h3>
+                        </div>
+                        <div class="panel-body">
+                            <!-- Display error message if any -->
+                            <div th:if="${error}" class="alert alert-danger" th:text="${error}">Error message</div>
+                            
+                            <form th:action="${isNew} ? @{/user-management/create} : @{/user-management/edit}" method="post" class="form-horizontal">
+                                <!-- Username field -->
+                                <div class="form-group">
+                                    <label for="username" class="col-sm-2 control-label">Username</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="username" name="username" 
+                                               th:value="${user.username}" th:readonly="${!isNew}" required>
+                                        <p class="help-block" th:if="${!isNew}">Username cannot be changed</p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Password field -->
+                                <div class="form-group">
+                                    <label for="password" class="col-sm-2 control-label">Password</label>
+                                    <div class="col-sm-10">
+                                        <input type="password" class="form-control" id="password" name="password" required>
+                                        <p class="help-block" th:if="${!isNew}">Enter a new password or leave unchanged</p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Role field -->
+                                <div class="form-group">
+                                    <label for="role" class="col-sm-2 control-label">Role</label>
+                                    <div class="col-sm-10">
+                                        <select class="form-control" id="role" name="role">
+                                            <option th:each="roleOption : ${roles}" 
+                                                    th:value="${roleOption}" 
+                                                    th:text="${roleOption}"
+                                                    th:selected="${roleOption == user.role}">Role</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <!-- Submit button -->
+                                <div class="form-group">
+                                    <div class="col-sm-offset-2 col-sm-10">
+                                        <button type="submit" class="btn btn-primary">
+                                            <i class="fa fa-save"></i> 
+                                            <span th:text="${isNew} ? 'Create User' : 'Update User'">Submit</span>
+                                        </button>
+                                        <a th:href="@{/user-management}" class="btn btn-default">
+                                            <i class="fa fa-times"></i> Cancel
+                                        </a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Database information panel -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Database Information</h3>
+                        </div>
+                        <div class="panel-body">
+                            <p>
+                                User information is stored in the <code>CONTAINER.web_goat_user</code> table with the following structure:
+                            </p>
+                            <ul>
+                                <li><strong>username</strong> - Primary key, unique identifier for the user</li>
+                                <li><strong>password</strong> - User's password</li>
+                                <li><strong>role</strong> - User's role (WEBGOAT_USER or WEBGOAT_ADMIN)</li>
+                            </ul>
+                            <p>
+                                When a new user is created, WebGoat also creates:
+                            </p>
+                            <ul>
+                                <li>A record in <code>CONTAINER.user_progress</code> to track the user's progress</li>
+                                <li>A new schema named after the username for lesson-specific data</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+</section>
+
+</body>
+</html> 

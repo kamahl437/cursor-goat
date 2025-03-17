@@ -129,6 +129,13 @@
                        <i class="fa fa-bar-chart-o"></i>
                     </button>
                 </a>
+                <!-- admin link -->
+                <a th:href="@{/start.mvc?admin=true}">
+                    <button type="button" id="admin-link-button" class="btn btn-default right_nav_button"
+                            th:title="Admin">
+                        <i class="fa fa-cog"></i> Admin
+                    </button>
+                </a>
                 <!--<button type="button" id="user-management" class="btn btn-default right_nav_button"-->
                 <!--title="User management">-->
                 <!--<i class="fa fa-users"></i>-->
@@ -164,6 +171,23 @@
                 <div class="row">
                     <div class="col-md-8">
                         <div class="col-md-12" align="left">
+                            <!-- Admin message section -->
+                            <div th:if="${adminMessage != null}" class="panel panel-primary">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Admin Panel</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="alert alert-info" th:text="${adminMessage}">Admin message</div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <a th:href="@{/user-management}" class="btn btn-primary">User Management</a>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <button class="btn btn-primary">System Settings</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div id="lesson-content-wrapper" class="panel">
                                 <div class="" id="error-notification-container">
                                     <div class="" id="error-notification">

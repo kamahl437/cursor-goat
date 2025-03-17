@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Phone Phishing (Vishing)</title>
+    <div th:replace="~{head}"></div>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Phone Phishing (Vishing)</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h4>Introduction</h4>
+                                <p>
+                                    Voice phishing (vishing) attacks use phone calls to manipulate victims into revealing sensitive information or taking harmful actions. Unlike email phishing, vishing exploits the personal nature and trust associated with voice communication.
+                                </p>
+                                
+                                <h4>In This Lesson</h4>
+                                <p>You will learn about three common vishing scenarios:</p>
+                                <ol>
+                                    <li><strong>IT Support Calls:</strong> Attackers pose as technical support staff</li>
+                                    <li><strong>Bank Security Calls:</strong> Criminals pretend to be from your bank</li>
+                                    <li><strong>Survey Calls:</strong> Seemingly innocent surveys designed to extract personal information</li>
+                                </ol>
+
+                                <h4>Common Red Flags in Vishing Calls</h4>
+                                <ul>
+                                    <li>Requests for sensitive information (passwords, PINs, full card numbers)</li>
+                                    <li>Pressure to act immediately</li>
+                                    <li>Unsolicited calls about "problems" that need immediate resolution</li>
+                                    <li>Requests to install software or grant remote access</li>
+                                    <li>Threats or intimidation tactics</li>
+                                    <li>Offers that sound too good to be true</li>
+                                </ul>
+
+                                <h4>Select a Scenario to Begin:</h4>
+                                <div class="scenario-buttons">
+                                    <a th:href="@{/phonephis/scenario1}" class="btn btn-primary">IT Support Call Scenario</a>
+                                    <a th:href="@{/phonephis/scenario2}" class="btn btn-primary">Bank Security Call Scenario</a>
+                                    <a th:href="@{/phonephis/scenario3}" class="btn btn-primary">Survey Call Scenario</a>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="alert alert-warning">
+                                    <strong>Why This Matters:</strong>
+                                    <p>Phone-based social engineering attacks bypass many technical security controls and exploit human psychology. According to the FBI, vishing scams cost victims millions of dollars annually.</p>
+                                </div>
+                                <div class="well">
+                                    <h4>Defense Strategy</h4>
+                                    <p>The best defense against vishing is awareness and skepticism. Never provide sensitive information to inbound callers. Instead, hang up and call the organization back using their official phone number.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

@@ -1,0 +1,29 @@
+== Goal 1: Don't Have a Facebook Account
+
+=== Social Media and Phishing Risk
+
+Social media platforms like Facebook collect vast amounts of personal information, which can be leveraged by attackers for sophisticated phishing attempts:
+
+* *Personal Details*: Your date of birth, hometown, education, workplace, and family connections provide attackers with information to craft convincing messages.
+
+* *Activity Timeline*: Your posts, check-ins, and life events help attackers understand your interests and activities, enabling them to time attacks effectively.
+
+* *Friends List*: Knowledge of your connections allows attackers to impersonate trusted friends or family members.
+
+=== Real-World Example
+
+Consider this scenario: You receive an email that says, "Hi [Your Name], I noticed you visited [Restaurant you checked into last week] recently. I'm the manager and we found your credit card after you left. Please confirm your details on this form so we can return it to you."
+
+This type of targeted attack is only possible because of the information you've shared on social media.
+
+=== Mitigation Strategies
+
+If you must use social media:
+
+* Set your profile to private
+* Limit the personal information you share
+* Be skeptical of friend requests from unknown individuals
+* Regularly review and restrict app permissions
+* Use strong, unique passwords and enable two-factor authentication
+
+*Now, answer the question below to demonstrate your understanding of why not having a Facebook account reduces your phishing risk.* 

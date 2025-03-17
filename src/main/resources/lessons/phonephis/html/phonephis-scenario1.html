@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Phone Phishing - IT Support Call Scenario</title>
+    <div th:replace="~{head}"></div>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">IT Support Call Scenario</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h4>Scenario Description:</h4>
+                                <p>You receive a call from someone claiming to be from your company's IT department. They explain that they've detected suspicious activity on your work account and need to verify your identity to secure your account.</p>
+                                
+                                <p>The caller says:</p>
+                                <blockquote class="blockquote" style="border-left: 5px solid #eee; padding-left: 10px;">
+                                    <p>"Hello, this is Alex from IT support. We've detected some unusual login attempts to your company account from an overseas IP address. It looks like someone might be trying to breach your account. I need to verify your identity and then help you secure your account by installing a security update on your computer. Can you please confirm your username and password so I can check if your account has been compromised?"</p>
+                                    <p>"I'll also need to install a remote access tool on your computer so I can apply the latest security patches. This is urgent - if we don't address this right away, your account might be used to access sensitive company information."</p>
+                                </blockquote>
+                                
+                                <h4>Assignment:</h4>
+                                <p>What are the red flags in this scenario? Identify at least one suspicious element in the caller's request that indicates this might be a voice phishing attack.</p>
+                                
+                                <form class="attack-form" accept-charset="UNKNOWN" method="POST" 
+                                    th:action="@{/phonephis/scenario1}" 
+                                    id="phonephis-scenario1-form">
+                                    <div class="form-group">
+                                        <label for="answer">Your Answer:</label>
+                                        <textarea class="form-control" id="answer" name="answer" rows="4" required></textarea>
+                                    </div>
+                                    <input type="submit" class="btn btn-primary" value="Submit"/>
+                                </form>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="alert alert-info">
+                                    <strong>Tip:</strong> Think about what legitimate IT support would and wouldn't ask for over the phone.
+                                </div>
+                                <img th:src="@{/images/call-center.png}" class="img-responsive" alt="IT Support Call" style="max-width: 100%; margin-top: 20px;"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

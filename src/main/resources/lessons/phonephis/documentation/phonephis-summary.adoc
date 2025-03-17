@@ -1,0 +1,51 @@
+== Phone Phishing (Vishing) Summary
+
+Congratulations on completing the Voice Phishing (Vishing) lesson! Let's review what we've learned:
+
+=== Key Takeaways
+
+1. *IT Support Calls*: 
+   * Legitimate IT support will never ask for your full password
+   * Always verify the identity of IT callers through official channels
+   * Never install software at the request of an unsolicited caller
+   * Report suspicious IT-related calls to your actual IT department
+
+2. *Bank Security Calls*:
+   * Financial institutions will never ask for complete card details or passwords over the phone
+   * Always end the call and contact your bank through official numbers printed on your card
+   * Be suspicious of unsolicited calls creating urgency about your accounts
+   * Remember that caller ID can be easily spoofed
+
+3. *Survey Calls*:
+   * Legitimate surveys rarely ask for personally identifying information
+   * Be skeptical of surveys offering significant rewards for minimal effort
+   * Never provide financial information to survey callers
+   * Consider requesting to participate online after researching the company
+
+=== Universal Vishing Defense Strategies
+
+Regardless of the scenario, always remember these core defense strategies:
+
+* *Verify Identity Independently*: End the call and contact the organization through official channels
+* *Never Share Sensitive Information*: Passwords, PINs, complete card numbers should never be shared
+* *Resist Urgency*: Attackers create false time pressure to prevent rational thinking
+* *Trust Your Instincts*: If something feels suspicious, it probably is
+* *Report Incidents*: Report attempted vishing to the relevant organizations and authorities
+
+=== The Psychology of Vishing
+
+Vishing attacks exploit fundamental human psychology:
+
+* *Authority*: We're conditioned to comply with authority figures (IT, bank officials)
+* *Fear*: Threats about account security or computer viruses trigger emotional responses
+* *Urgency*: Time pressure prevents careful consideration
+* *Social Proof*: References to companies we know increases trust
+* *Reciprocity*: Offers of help or rewards make us feel obligated to comply
+
+By understanding these psychological triggers, you can better recognize when they're being used against you.
+
+=== Remember
+
+Voice phishing may seem less technical than other cyber attacks, but it remains one of the most effective methods for attackers because it exploits human psychology rather than technical vulnerabilities. The best defense is awareness and a healthy skepticism of unsolicited callers requesting information or action.
+
+*Stay vigilant!* 

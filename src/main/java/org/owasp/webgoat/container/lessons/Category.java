@@ -22,6 +22,8 @@ public enum Category {
   A10("(A10) Server-side Request Forgery"),
 
   CLIENT_SIDE("Client side"),
+  
+  PHISHING("Phishing Attacks"),
 
   CHALLENGE("Challenges");
 

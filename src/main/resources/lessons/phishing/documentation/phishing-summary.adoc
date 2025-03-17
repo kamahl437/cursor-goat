@@ -1,0 +1,46 @@
+== Phishing Awareness Summary
+
+Congratulations on completing the Phishing Awareness lesson! Let's review what we've learned:
+
+=== Key Takeaways
+
+1. *Social Media Risk*: 
+   * Social media platforms collect vast amounts of personal data
+   * This information can be used to craft highly convincing phishing attempts
+   * Limiting your social media presence reduces your attack surface
+
+2. *Financial Service Targeting*:
+   * Banking and financial services are prime targets for phishing
+   * Attackers use urgency and fear to trick users
+   * Always verify financial requests through official channels
+   * Never click links in emails claiming to be from your bank
+
+3. *Identity Verification*:
+   * Never trust messages solely based on who they appear to be from
+   * Always verify identity through secondary channels
+   * Be particularly wary of unexpected requests for sensitive information
+   * Even trusted contacts like "Josh" could be compromised or impersonated
+
+=== Beyond the Three Rules
+
+While our three rules provide a solid foundation for phishing awareness, comprehensive protection requires a layered approach:
+
+* *Technical Controls*: 
+  - Use email filtering systems
+  - Enable multi-factor authentication
+  - Keep software and systems updated
+
+* *Awareness and Training*:
+  - Stay informed about current phishing techniques
+  - Regular security awareness training
+  - Creating a security-conscious culture
+
+* *Reporting Mechanisms*:
+  - Know how to report suspected phishing attempts
+  - Early reporting can protect others
+
+=== Final Thoughts
+
+Remember, cybersecurity is a continuous process. Phishing tactics evolve constantly, and staying vigilant is your best defense. By understanding the risks associated with social media, online banking, and message sender verification, you're better equipped to protect yourself from phishing attacks.
+
+*Stay safe online!* 

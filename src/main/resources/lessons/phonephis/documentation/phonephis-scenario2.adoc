@@ -1,0 +1,44 @@
+== Scenario 2: The Bank Security Call
+
+Financial institutions are prime targets for vishing attacks because they offer immediate monetary gain to successful attackers.
+
+=== The Scenario
+
+_Your phone rings. The caller ID shows "First National Bank."_
+
+"Hello, this is Michael from First National Bank's Fraud Prevention department. We've detected suspicious activity on your account. There have been several unusual transactions that we need to verify. To confirm your identity and secure your account, I'll need you to verify your card number, expiration date, CVV code, and your online banking password. This is urgent as we need to block any further unauthorized transactions."
+
+=== Red Flags in This Scenario
+
+* *Caller ID can be spoofed*: Even though it shows your bank's name, this can be faked
+* *Request for complete card details*: Banks never ask for your full card information
+* *Request for online banking password*: No legitimate bank representative would ask for this
+* *Creating urgency*: Pressuring you to act immediately
+* *Calling you unsolicited*: Banks typically freeze suspicious transactions first, then contact you or wait for you to contact them
+
+=== Actual Attack Objective
+
+The attacker is trying to:
+
+1. Collect your complete payment card information
+2. Gain access to your online banking account
+3. Make unauthorized transfers or purchases
+4. Potentially steal your identity for further fraud
+
+=== Real-World Statistics
+
+* Banking vishing attacks increased by 62% in the last two years
+* The average financial loss from banking vishing is $4,200 per victim
+* 22% of consumers report receiving calls from fraudsters impersonating their bank
+* Only 37% of consumers know that their bank will never ask for their full security details over the phone
+
+=== How to Respond
+
+Legitimate options for handling this situation include:
+
+* Hang up and call the official number on the back of your bank card
+* Refuse to provide any information and verify directly with your bank through official channels
+* Ask questions the real bank would know (but don't provide information)
+* Report the incident to your actual bank
+
+*Now, select the most appropriate response to this scenario below.* 
